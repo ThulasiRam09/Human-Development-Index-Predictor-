@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Human Development Index Predictor</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: radial-gradient(circle at top, #10243e 0%, #050a14 70%);
+    color: #eef3fa;
+    min-height: 100vh;
+  }
+  .navbar {
+    display: flex;
+    justify-content: flex-end;
+    gap: 24px;
+    padding: 20px 40px;
+  }
+  .navbar a {
+    color: #cfe0f5;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 18px;
+    border-radius: 8px;
+    transition: background 0.2s;
+  }
+  .navbar a:hover { background: rgba(255,255,255,0.08); }
+  .hero {
+    max-width: 780px;
+    margin: 40px auto;
+    padding: 0 24px;
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: 2.6rem;
+    background: linear-gradient(90deg, #6fb1ff, #9b7bff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 8px;
+  }
+  .hero p {
+    line-height: 1.7;
+    color: #b9c8de;
+    font-size: 1.05rem;
+  }
+  .cta {
+    display: inline-block;
+    margin-top: 28px;
+    padding: 14px 36px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, #4f8ef7, #8b5cf6);
+    color: white;
+    text-decoration: none;
+    font-weight: 700;
+    box-shadow: 0 8px 24px rgba(79,142,247,0.35);
+  }
+  .tiers {
+    max-width: 900px;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+    padding: 0 24px;
+  }
+  .tier-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 14px;
+    padding: 18px;
+    text-align: center;
+  }
+  .tier-card .range { color: #7fb0ff; font-weight: 700; }
+</style>
+</head>
+<body>
+  <div class="navbar">
+    <a href="/Home">Home</a>
+    <a href="/Prediction">Predict</a>
+  </div>
+
+  <div class="hero">
+    <h1>Human Development Index</h1>
+    <p>
+      The Human Development Index (HDI) is a statistical composite of life expectancy,
+      education, and per‑capita income indicators used to rank countries into four tiers
+      of human development. The HDI was created to emphasize that people and their
+      capabilities — not economic growth alone — should be the ultimate criteria for
+      assessing a country's development.
+    </p>
+    <p>
+      This tool uses a Linear Regression model trained on country-level indicators to
+      predict a country's HDI score and classify it into a development tier.
+    </p>
+    <a class="cta" href="/Prediction">Try the Predictor →</a>
+  </div>
+
+  <div class="tiers">
+    <div class="tier-card"><div class="range">≥ 0.800</div>Very High</div>
+    <div class="tier-card"><div class="range">0.700 – 0.799</div>High</div>
+    <div class="tier-card"><div class="range">0.550 – 0.699</div>Medium</div>
+    <div class="tier-card"><div class="range">&lt; 0.550</div>Low</div>
+  </div>
+</body>
+</html>
