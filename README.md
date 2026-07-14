@@ -78,5 +78,6 @@ HDI score from Life Expectancy, Mean Years of Schooling, GNI per Capita, and
 Internet Users, and classifies it into Low / Medium / High / Very High development.
 
 🚀 **Live Demo:** [View the Web App on Render](https://human-development-index-predictor-1-pmwp.onrender.com/)
+🎥 **Project Video:** [Watch the Demo Video](https://drive.google.com/file/d/1HQN9cR-cL0Uyo3KtopHqFcQ5Eu_44ehW/view?usp=sharing)
 
 ## Folder structure
