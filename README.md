@@ -70,3 +70,13 @@ Then open **http://127.0.0.1:5000** in your browser:
 - Swap in the real Kaggle HDI dataset (same column names) for production-grade accuracy.
 - Add Expected Years of Schooling as a feature to match the full UNDP formula.
 - Deploy with `gunicorn`/`waitress` instead of the Flask dev server for production.
+
+# Human Development Index (HDI) Predictor
+
+A complete ML + Flask project matching your internship spec: predicts a country's
+HDI score from Life Expectancy, Mean Years of Schooling, GNI per Capita, and
+Internet Users, and classifies it into Low / Medium / High / Very High development.
+
+🚀 **Live Demo:** [View the Web App on Render](https://human-development-index-predictor-1-pmwp.onrender.com/)
+
+## Folder structure
